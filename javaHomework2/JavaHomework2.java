@@ -43,7 +43,7 @@ public class JavaHomework2 {
     		 sum = sum + input%10;
     		 input = input/10;
     	 }
-	return sum;
+	return addDigits(sum);
 		}
      public static void printPerfectNumbers(int n){
  		 System.out.print("the perfect number between 1 to "+ n +" is :"); 
