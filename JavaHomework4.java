@@ -226,20 +226,20 @@ class Student{
 class Course{
 	private String name;
 	private int numberOfStudent = 0;
-	String[] nameOfStudent = new String[10];
+	Student[] nameOfStudent = new Student[10];
 	public Course(String name){
 		this.name = name;
 	}
 	public void Register(Student stu){
 		if(numberOfStudent<10)
 		{
-		nameOfStudent[numberOfStudent] = stu.getName();
+		nameOfStudent[numberOfStudent] = stu;
 		numberOfStudent++;
 		}
 		else
 		System.out.println("the class have 10 student already");
 	}
-	public String[] getStudents(){
+	public Student[] getStudents(){
 		return nameOfStudent;
 	}
 	public boolean isFull(){
