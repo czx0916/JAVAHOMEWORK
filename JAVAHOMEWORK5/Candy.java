@@ -21,10 +21,7 @@ class Candy extends DessertItem{
 		String temp = this.getName();
 		String temp1 =DessertShoppe.centsToDollars(this.getCost())+"\n";
 		String res = DessertShoppe.centsToDollars(this.getWeight()) +"lbs. @ " + this.getPrice()+"/lb\n";
-		for(int i =0;i<temp.length();i++){
-			
-			res =res + temp.charAt(i);
-		}
+		res =res +temp;
 		for(int i =temp.length();i<DessertShoppe.OUTPUT_LENGTH-temp1.length();i++){
 			res = res +" ";
 		}
