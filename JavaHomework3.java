@@ -16,10 +16,12 @@ public class JavaHomework3 {
 
 	}
 public static String removeVowelsFromString(String input){
+    // Consider upper case vowels
     input=input.replaceAll("a|e|i|o|u","");
 	
 	return input;
  }
+// Does this method validate palindrome?
 public static boolean CheckIfTwoStringsAreAnagrams(String s1,String s2){
 	 
     String[] a1 = s1.split("");
@@ -91,6 +93,7 @@ class caculater{
 	}
 	static double[] quaraticEquation(double a,double b,double c){
 		double[]  result = new double[2];
+		// What if a == 0?
 		if(Math.sqrt(b*b-4*a*c)>=0){
 			result[0] = (-b+Math.sqrt(b*b-4*a*c))/2*a;
 			result[1] = (-b-Math.sqrt(b*b-4*a*c))/2*a;
