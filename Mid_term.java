@@ -19,6 +19,7 @@ public class Mid_term {
 		System.out.println(findpath(test));
 	}
 public static int arrangeCoins(int n){
+	// Why i <= Integer.MAX_VALUE, it can work, but not the optimal way to deal with it
 	for(int i =1;i<=Integer.MAX_VALUE;i++)
 	{  int num = (1+i)*i;
 		if(num>2*n)
