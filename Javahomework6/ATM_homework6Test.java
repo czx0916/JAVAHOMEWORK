@@ -66,5 +66,4 @@ public class ATM_homework6Test {
 	public void testWithDrawal() {
 		fail("Not yet implemented");
 	}
-
 }
